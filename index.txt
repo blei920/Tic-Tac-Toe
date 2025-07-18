@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="mode-selection" class="modal-overlay active">
+        <div class="modal-content">
+            <h2>Choose Difficulty</h2>
+            <button id="easy-mode">Easy</button>
+            <button id="normal-mode">Normal</button>
+            <button id="hard-mode">Hard</button>
+        </div>
+    </div>
+    
+    <div id="end-game-screen" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="result-message"></h2>
+            <div class="end-game-buttons">
+                <button id="retry-button">Retry</button>
+                <button id="change-mode-button">Change Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-container" style="display: none;">
+        <div class="game-header">
+            <h1>Tic-Tac-Toe</h1>
+            <p id="difficulty-display"></p>
+        </div>
+        <div id="board"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
